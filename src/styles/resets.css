@@ -32,8 +32,8 @@ span {
 }
 
 :root {
-    --corTextoEscuro: rgb(0, 0, 0);
-    --corTextoClaro: white;
+    --corTextoEscuro: #000;
+    --corTextoClaro: #fff;
 
     --corPrincipal: #FF8C42;
     --corBotaoLaranja: var(--corPrincipal);
