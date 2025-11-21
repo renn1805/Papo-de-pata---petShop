@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100dvh;
+    width: 100%;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Baloo 2", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+p,
+span {
+    font-family: "Inter", sans-serif;
+}
+
+:root {
+    --corTextoEscuro: rgb(0, 0, 0);
+    --corTextoClaro: white;
+
+    --corPrincipal: #FF8C42;
+    --corBotaoLaranja: var(--corPrincipal);
+    --corBotaoLaranjaHover: #d2611b;
+
+    --degradeTituloLaranjaEscuro: linear-gradient(to bottom, #FF8C42, #593017);
+    --degradeTituloLaranjaClaro: linear-gradient(to bottom, #FF8C42, #eccbb7);
+
+    --degradeCardSobre: linear-gradient(to bottom, #ff8a4258, transparent);
+
+    --degradeOverlaySlider: radial-gradient(transparent, rgba(0, 0, 0, 0.473) 30%, rgba(0, 0, 0, 0.897) 90%);
+}
