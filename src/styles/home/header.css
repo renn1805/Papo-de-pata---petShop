@@ -1,11 +1,11 @@
-header{
+header#banner-home {
     width: 100%;
     height: 88vh;
 
     flex-direction: column;
     row-gap: 20px;
 
-    background: url(../../../public/banner-header.jpg);
+    background-image: url(/banner-header.jpg);
 
     border-bottom: 1px solid black;
 }
