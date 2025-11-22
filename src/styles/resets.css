@@ -46,3 +46,20 @@ span {
 
     --degradeOverlaySlider: radial-gradient(transparent, rgba(0, 0, 0, 0.473) 30%, rgba(0, 0, 0, 0.897) 90%);
 }
+
+
+/*! animações */
+
+@keyframes pulse {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+}

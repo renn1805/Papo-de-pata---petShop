@@ -109,6 +109,8 @@ section#slider svg {
     border: 1px solid #cccccc9d;
 
     transition: .6s ease-in-out;
+
+    cursor: pointer;
 }
 
 section#slider svg:hover {
@@ -153,6 +155,8 @@ div.dot {
     background: #eee;
 
     transition: .3s ease-in-out;
+
+    cursor: pointer;
 }
 
 div.dot:hover {

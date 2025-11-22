@@ -9,6 +9,7 @@ import "./styles/nav.css";
 import "./styles/home/header.css";
 import "./styles/home/sobre.css";
 import "./styles/home/slider.css";
+import "./styles/home/produtos.css";
 
 createRoot(document.getElementById("root")!).render(
    <StrictMode>

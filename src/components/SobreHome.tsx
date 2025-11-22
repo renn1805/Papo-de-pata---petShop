@@ -1,7 +1,12 @@
+import iconeCard1 from "../../public/icone-card1.png";
+import iconeCard2 from "../../public/icone-card2.png";
+import iconeCard3 from "../../public/icone-card3.png";
+
 const SobreHome = () => {
    interface ComposicaoCards {
       tituloCard: string;
       textoCard: string;
+      iconeCard: any;
    }
 
    const Cards: ComposicaoCards[] = [
@@ -9,16 +14,19 @@ const SobreHome = () => {
          tituloCard: "Adoção Responsável",
          textoCard:
             "Avaliamos cada adotante para assegurar que o pet encontrará um lar adequado às suas necessidades.",
+         iconeCard: iconeCard1,
       },
       {
          tituloCard: "Acompanhamento Completo",
          textoCard:
             "Nossa equipe está disponível para tirar dúvidas e ajudar na adaptação do seu novo amigo.",
+         iconeCard: iconeCard2,
       },
       {
          tituloCard: "Animais Saudáveis",
          textoCard:
             "Cuidamos da saúde de cada animal antes da adoção, incluindo castração quando necessário.",
+         iconeCard: iconeCard3,
       },
    ];
 
@@ -35,14 +43,14 @@ const SobreHome = () => {
          <div id="conteiner-cards">
             {Cards.map((card, index) => (
                <div className="card" key={index}>
+                  <img src={card.iconeCard} className="icone-card" />
                   <h3>{card.tituloCard}</h3>
                   <p>{card.textoCard}</p>
                   <svg
                      xmlns="http://www.w3.org/2000/svg"
                      fill="none"
                      viewBox="0 0 24 24"
-                     strokeWidth="2.7"
-                     stroke="#FF8C42">
+                     strokeWidth="2.7">
                      <path
                         strokeLinecap="round"
                         strokeLinejoin="round"

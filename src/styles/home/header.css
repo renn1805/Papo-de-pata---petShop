@@ -20,13 +20,13 @@ img#logo-header {
     width: 230px;
 }
 
-div.conteiner-botoes-header {
+div#conteiner-botoes-header {
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-div.conteiner-botoes-header button {
+div#conteiner-botoes-header button {
     padding: 10px;
     font-size: 1.3rem;
     font-weight: 500;
@@ -40,28 +40,51 @@ div.conteiner-botoes-header button {
     transition: .5s ease-in-out;
 
     cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
 }
 
-button.botao-conhecer-mais {
+div#conteiner-botoes-header button svg {
+    width: 0;
+
+    opacity: 0;
+
+    transition: .5s ease-in-out;
+}
+
+div#conteiner-botoes-header button:hover svg {
+    width: 25px;
+
+    opacity: 100;
+
+    animation: pulse 1s infinite;
+
+}
+
+button#botao-conhecer-mais {
     background: var(--corBotaoLaranja);
 
     border: 1px solid transparent;
 
 }
 
-button.botao-conhecer-mais:hover {
+button#botao-conhecer-mais:hover {
     background: var(--corBotaoLaranjaHover);
 
 }
 
-button.botao-fale-conosco {
+button#botao-fale-conosco {
     backdrop-filter: blur(5px);
     background: transparent;
     border: 1px solid;
-
 }
 
-button.botao-fale-conosco:hover {
+button#botao-fale-conosco:hover {
     background: white;
     color: var(--corTextoEscuro);
 
