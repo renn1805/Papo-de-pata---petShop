@@ -2,9 +2,6 @@ section#mais-vendidos {
     min-height: 95vh;
     width: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 40px;
     flex-direction: column;
     flex-wrap: wrap;
@@ -20,12 +17,9 @@ h2#titulo-mais-vendidos {
 
 }
 
-div.conteiner-cards-produto {
+div#conteiner-cards-produto {
     width: 100%;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
@@ -35,7 +29,7 @@ div.card-produto {
     height: 440px;
     width: 350px;
 
-    background: linear-gradient(to bottom, #bbbbbbc6, #fff 65%);
+    background: var(--degradeCardProduto);
 
     border-radius: 10px;
     border: 3px solid #ffffff;
@@ -97,10 +91,8 @@ p.descricao-produto {
 }
 
 div.conteiner-preco-produto {
-    display: flex;
     flex-direction: row;
     gap: 3px;
-    align-items: center;
 
     height: fit-content;
     width: 100%;
@@ -110,7 +102,7 @@ div.conteiner-preco-produto {
 }
 
 div.conteiner-preco-produto span:nth-child(1) {
-    color: green;
+    color: var(--corVerdePrincipal);
     font-weight: 900;
     font-size: 1.3rem;
 }
@@ -122,11 +114,11 @@ div.conteiner-preco-produto span:nth-child(2) {
     text-decoration: line-through;
 }
 
-button.ver-produto{
+button.ver-produto {
     padding: 10px;
     margin-left: auto;
 
-    background: green;
+    background: var(--corVerdePrincipal);
 
     border-radius: 5px;
     border: none;
@@ -134,22 +126,19 @@ button.ver-produto{
     height: fit-content;
     width: fit-content;
 
-    color: white;
+    color: var(--corTextoClaro);
     font-weight: 900;
 
     transition: all 1s ease-in-out;
 }
 
 button.ver-produto:hover {
-    background: rgb(0, 89, 0);
+    background: var(--corVerdePrincipalHover);
     scale: 1.1;
 }
 
-button#ver-todos-produtos{
-    display: flex;
+button#ver-todos-produtos {
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     gap: 7px;
 
     padding: 12px;
@@ -158,27 +147,28 @@ button#ver-todos-produtos{
     color: var(--corTextoEscuro);
     font-size: 1.3rem;
 
-    background: white;
+    background: var(--corTextoClaro);
     border: 2px solid currentColor;
     border-radius: 10px;
-    
+
     transition: all .6s ease-in-out;
 }
 
-button#ver-todos-produtos:hover{
-    background: black;
-    color: white;
+button#ver-todos-produtos:hover {
+    background: var(--corTextoEscuro);
+    color: var(--corTextoClaro);
 
     animation: swing .7s infinite;
 }
 
-button#ver-todos-produtos svg{
+button#ver-todos-produtos svg {
     width: 0;
     height: 20px;
 
     transition: all .3s ease-in-out;
 }
-button#ver-todos-produtos:hover svg{
+
+button#ver-todos-produtos:hover svg {
     width: 23px;
 
     animation: pulse 1s infinite ease-in-out

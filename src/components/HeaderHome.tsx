@@ -2,12 +2,13 @@ import logoHeader from "../../public/logo-header.png";
 
 const HeaderHome = () => {
    return (
-      <header>
+      <header id="banner-home" className="flex-justify-align-center config-background-url" >
          <img id="logo-header" src={logoHeader} alt="logotipo" />
 
-         <div id="conteiner-botoes-header">
+         <div id="conteiner-botoes-header" className="flex-justify-align-center">
             <button
                id="botao-conhecer-mais"
+               className="flex-justify-align-center"
                onClick={() => {
                   window.location.href = "#sobre";
                }}>
@@ -25,7 +26,7 @@ const HeaderHome = () => {
                   />
                </svg>
             </button>
-            <button id="botao-fale-conosco">
+            <button id="botao-fale-conosco" className="flex-justify-align-center">
                Fale conosco
                <svg
                   xmlns="http://www.w3.org/2000/svg"

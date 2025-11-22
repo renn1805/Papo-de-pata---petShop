@@ -2,10 +2,10 @@ import {produtos} from "./produtos";
 
 const ProdutosHome = () => {
    return (
-      <section id="mais-vendidos">
+      <section id="mais-vendidos" className="flex-justify-align-center">
          <h2 id="titulo-mais-vendidos">Nossos Melhores Produtos</h2>
 
-         <div className="conteiner-cards-produto">
+         <div id="conteiner-cards-produto" className="flex-justify-align-center">
             {produtos.map((produto, index) => (
                <div className="card-produto" key={index}>
                   <div className="conteiner-imagem-produto">
@@ -20,7 +20,7 @@ const ProdutosHome = () => {
                      <p className="descricao-produto">
                         {produto.descricaoProduto}
                      </p>
-                     <div className="conteiner-preco-produto">
+                     <div className="conteiner-preco-produto flex-justify-align-center">
                         <span className="preco-desconto">
                            {produto.precoDescontoProduto}
                         </span>
@@ -29,7 +29,8 @@ const ProdutosHome = () => {
                         </span>
 
                         <button
-                           className="ver-produto"
+                           className="ver-produto flex-justify-align-center"
+
                            // todo: rota correta para o produto escolhido
                            onClick={() => {
                               localStorage.setItem(
@@ -49,6 +50,7 @@ const ProdutosHome = () => {
 
          <button
             id="ver-todos-produtos"
+            className="flex-justify-align-center"
             onClick={() => {
                location.href = "";
             }}>

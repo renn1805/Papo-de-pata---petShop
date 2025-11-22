@@ -6,7 +6,7 @@ const SobreHome = () => {
    interface ComposicaoCards {
       tituloCard: string;
       textoCard: string;
-      iconeCard: any;
+      iconeCard: string;
    }
 
    const Cards: ComposicaoCards[] = [
@@ -31,14 +31,12 @@ const SobreHome = () => {
    ];
 
    return (
-      <section id="sobre">
-         <div id="conteiner-texto-sobre">
-            <h2 id="titulo-sobre">Sobre Nossa Plataforma</h2>
-         </div>
+      <section id="sobre" className="flex-justify-align-center">
+         <h2 id="titulo-sobre">Sobre Nossa Plataforma</h2>
 
-         <div id="conteiner-cards">
+         <div id="conteiner-cards" className="flex-justify-align-center">
             {Cards.map((card, index) => (
-               <div className="card" key={index}>
+               <div className="card flex-justify-align-center" key={index}>
                   <img src={card.iconeCard} className="icone-card" />
                   <h3>{card.tituloCard}</h3>
                   <p>{card.textoCard}</p>

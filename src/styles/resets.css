@@ -45,12 +45,15 @@ button, a{
     --corPrincipal: #FF8C42;
     --corBotaoLaranja: var(--corPrincipal);
     --corBotaoLaranjaHover: #d2611b;
+    --corVerdePrincipal: green;
+    --corVerdePrincipalHover: rgb(0, 89, 0);
 
     --degradeTituloLaranjaEscuro: linear-gradient(to bottom, #FF8C42, #593017);
     --degradeTituloLaranjaClaro: linear-gradient(to bottom, #FF8C42, #eccbb7);
     --degradeTituloVerde: linear-gradient(to bottom, green, rgb(7, 180, 7));
 
     --degradeCardSobre: linear-gradient(to bottom, #ff8a4258, transparent);
+    --degradeCardProduto: linear-gradient(to bottom, #bbbbbbc6, #fff 65%);
 
     --degradeOverlaySlider: radial-gradient(transparent, rgba(0, 0, 0, 0.473) 30%, rgba(0, 0, 0, 0.897) 90%);
 }
@@ -81,4 +84,19 @@ button, a{
     100%{
         translate: -5px;
     }
+}
+
+
+/*! classes padrão */
+
+.flex-justify-align-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.config-background-url{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
