@@ -34,10 +34,6 @@ const SobreHome = () => {
       <section id="sobre">
          <div id="conteiner-texto-sobre">
             <h2 id="titulo-sobre">Sobre Nossa Plataforma</h2>
-            <p id="descricao-sobre">
-               Somos uma plataforma dedicada a facilitar a adoção responsável de
-               animais. Cada pet merece um lar cheio de amor e cuidado!
-            </p>
          </div>
 
          <div id="conteiner-cards">

@@ -13,7 +13,7 @@ const SliderHome = () => {
          key: 1,
          titulo: "Vida leve com pets",
          conteudo:
-            "Uma vida mais feliz começa ao lado de quem late, ronrona e ama sem medidas. Aqui, cada pet encontra a chance de viver com alegria",
+            "Uma vida mais feliz começa ao lado de quem late, ronrona e ama sem medidas. Aqui, cada pet encontra a chance de viver com alegria.",
       },
       {
          key: 2,

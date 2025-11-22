@@ -29,10 +29,6 @@ div#conteiner-texto-sobre h2 {
     font-size: 4rem;
 }
 
-div#conteiner-texto-sobre p {
-    width: 70%;
-}
-
 div#conteiner-cards {
     display: flex;
     flex-direction: row;
